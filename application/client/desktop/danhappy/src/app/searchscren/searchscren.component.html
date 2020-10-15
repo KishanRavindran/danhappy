@@ -1,0 +1,17 @@
+<h2>Searchscren</h2>
+<form class='form'>
+<div  class=' form-group'>
+<label  class=' label'>Name</label>
+<input  class=' input form-control' placeholder='Type here your name' name=input_template-iyyy [(ngModel)]="emp.empname" [ngModelOptions]="{standalone: true}"/>
+</div>
+<div  class=' form-group'>
+<label  class=' label'>Email</label>
+<input  class=' input form-control' type='email' placeholder='Type here your email' name=input_template-ihrq [(ngModel)]="emp.empmailid" [ngModelOptions]="{standalone: true}"/>
+</div>
+<div  class=' form-group'>
+<button  class=' button btn btn-primary' type='submit' name=button_template-iow07 (click)="GpSearch()">Search</button>
+</div>
+</form>
+<div class='template-igzst' name=grid_template-igzst>
+<ag-grid-angular #agGrid style="width: 100%; height: 100%;" id="myGrid" class="ag-theme-balham" [columnDefs]="columnDefs" [pagination]="true" (selectionChanged)="onSelectionChanged($event)" [paginationPageSize]="paginationPageSize"></ag-grid-angular>
+</div>

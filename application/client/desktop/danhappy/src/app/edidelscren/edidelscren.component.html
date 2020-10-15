@@ -1,0 +1,15 @@
+<h2>Edidelscren</h2>
+<form class='form'>
+<div  class=' form-group'>
+<label  class=' label'>Name</label>
+<input  class=' input form-control' placeholder='Type here your name' name=input_template-itrh [(ngModel)]="emp.empname" [ngModelOptions]="{standalone: true}"/>
+</div>
+<div  class=' form-group'>
+<label  class=' label'>Email</label>
+<input  class=' input form-control' type='email' placeholder='Type here your email' name=input_template-iorr [(ngModel)]="emp.empmailid" [ngModelOptions]="{standalone: true}"/>
+</div>
+<div  class=' form-group'>
+<button  class=' button btn btn-primary' type='submit' name=button_template-iq3ue (click)="GpUpdate()">Update</button>
+<button  class=' button btn btn-primary' name=button_template-it0nd (click)="GpDelete()">Delete</button>
+</div>
+</form>
