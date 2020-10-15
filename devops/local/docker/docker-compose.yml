@@ -78,7 +78,7 @@ services:
     image: Feature10
     container_name: Feature10
     ports: 
-      - 8010:8010
+      - 8012:8012
     env_file: .env
     depends_on:
       - mongo
